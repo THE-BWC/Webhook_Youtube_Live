@@ -1,0 +1,21 @@
+{
+  "name": "youtube-live-notifications",
+  "version": "1.0.0",
+  "description": "Application that monitors BWC Members' YouTube channels for new Live streams and posts them to Discord through a webhook.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Patrick",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "discord.js": "^14.0.2",
+    "googleapis": "^105.0.0",
+    "node-fetch": "^2.6.7",
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1"
+  }
+}

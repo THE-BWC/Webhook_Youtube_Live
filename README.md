@@ -1,3 +1,5 @@
+<img alt="Black Widow Company" src="https://the-bwc.com/PAO/BannerStandard.png"/>
+
 # YouTube Live Webhook
 A simple node.js application that monitors BWC Members' YouTube channels for live streams and posts them to a Discord channel using a webhook.
 
@@ -55,7 +57,7 @@ The application uses the `winston` logger to log messages to the console and to 
 5. Enjoy!
 
 ## Contact
-If you have any questions, feel free to contact me on:
+If you have any questions, feel free to contact me at:
 - [BWC Discord](https://discord.the-bwc.com/) `[BWC] Patrick`
 - [BWC Forums](https://the-bwc.com/forum/index.php) `Patrick`.
 

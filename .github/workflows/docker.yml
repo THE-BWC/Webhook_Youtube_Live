@@ -13,7 +13,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/discord_opservbot
+  IMAGE_NAME: ${{ github.repository_owner }}/webhook_youtube_live
 
 jobs:
   build_push:

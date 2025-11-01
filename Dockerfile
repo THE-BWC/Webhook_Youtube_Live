@@ -1,8 +1,4 @@
-FROM node:20-slim
-
-RUN apt-get update && apt-get install -y \
-    curl \
-    && apt-get clean
+FROM node:22-bullseye-slim
 
 ARG NODE_ENV=production
 ENV NODE_ENV=$NODE_ENV
@@ -23,4 +19,4 @@ COPY --chown=node:node . .
 CMD [ "node", "index.js" ]
 
 LABEL org.opencontainers.image.source=https://github.com/the-bwc/webhook_youtube_live
-LABEL org.opencontainers.image.authors="Patrick Pedersen <github@patrickpedersen.tech> Black Widow Company <S-1@the-bwc.com> WidowMakers <S-1@widowmakers.org>"
+LABEL org.opencontainers.image.authors="Patrick Pedersen <github@patrickpedersen.tech> Black Widow Company <S-1@the-bwc.com>"

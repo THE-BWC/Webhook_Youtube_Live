@@ -11,20 +11,10 @@ const config = require('./config.json')
  */
 let logger = Winston.createLogger({
     transports: [
-        new Winston.transports.File({ filename: 'Youtube-Live-Notification.log' })
+        new Winston.transports.Console({ format: Winston.format.simple() })
     ],
     format: Winston.format.printf((log) => `[${new Date().toLocaleString()}] - [${log.level.toUpperCase()}] - ${log.message}`)
 })
-
-/**
- * Outputs to console during Development & loads dotenv
- */
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-    logger.add(new Winston.transports.Console({
-        format: Winston.format.simple()
-    }))
-}
 
 let streamerStatusCache = {}
 const YoutubeURL = 'https://www.youtube.com/channel/'
